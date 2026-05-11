@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio | Complemento de CV</title>
+    <meta
+      name="description"
+      content="Portfolio accesible y responsive pensado para ampliar el contexto del CV con proyectos, impacto y forma de trabajo."
+    />
+    <meta name="theme-color" content="#0f3d3e" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio | Complemento de CV" />
+    <meta
+      property="og:description"
+      content="Portfolio accesible y responsive pensado para ampliar el contexto del CV con proyectos, impacto y forma de trabajo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./content.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+    <div class="page-shell">
+      <div class="ambient ambient-a" aria-hidden="true"></div>
+      <div class="ambient ambient-b" aria-hidden="true"></div>
+
+      <header class="site-header">
+        <div class="container header-bar">
+          <a class="brand" href="#top" aria-label="Ir al inicio del portfolio">
+            <span class="brand-mark" aria-hidden="true">HS</span>
+            <span class="brand-copy">
+              <strong id="brand-name">Portfolio</strong>
+              <span id="brand-role">Complemento de CV</span>
+            </span>
+          </a>
+
+          <div class="header-actions">
+            <nav class="site-nav" aria-label="Navegación principal">
+              <a id="nav-work" href="#selected-work">Proyectos</a>
+              <a id="nav-experience" href="#experience">Experiencia</a>
+              <a id="nav-approach" href="#approach">Método</a>
+              <a id="nav-contact" href="#contact">Contacto</a>
+            </nav>
+
+            <div class="language-toggle" role="group" aria-label="Selector de idioma">
+              <button class="lang-button is-active" type="button" data-lang-switch="es">ES</button>
+              <button class="lang-button" type="button" data-lang-switch="en">EN</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="hero section">
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow" id="hero-eyebrow">Portfolio narrativo</p>
+              <h1 id="hero-title">Un sitio pensado para añadir contexto a tu CV.</h1>
+              <p class="hero-intro" id="hero-intro">
+                Impacto, criterio y proyectos contados con más profundidad de la que permite un currículum.
+              </p>
+              <p class="hero-summary" id="hero-summary">
+                Este sitio resume casos, decisiones y forma de trabajo para que un recruiter o cliente entienda
+                rápido cómo piensas y qué ejecutas bien.
+              </p>
+
+              <div class="hero-cta">
+                <a class="button button-primary" href="#selected-work" id="primary-cta">Ver proyectos</a>
+                <a class="button button-secondary" href="#contact" id="secondary-cta">Hablar conmigo</a>
+              </div>
+            </div>
+
+            <aside class="hero-panel reveal" aria-labelledby="snapshot-title">
+              <div class="panel-card">
+                <p class="panel-kicker" id="snapshot-kicker">Snapshot</p>
+                <h2 id="snapshot-title">Lo esencial, de un vistazo.</h2>
+                <dl class="snapshot-list">
+                  <div>
+                    <dt id="snapshot-location-label">Base</dt>
+                    <dd id="snapshot-location">Madrid / remoto</dd>
+                  </div>
+                  <div>
+                    <dt id="snapshot-focus-label">Foco</dt>
+                    <dd id="snapshot-focus">Producto, estrategia y ejecución</dd>
+                  </div>
+                  <div>
+                    <dt id="snapshot-availability-label">Disponibilidad</dt>
+                    <dd id="snapshot-availability">Abierto a proyectos selectivos</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="panel-note">
+                <p id="snapshot-note">
+                  Este portfolio no sustituye al CV: lo amplía con contexto, criterio y ejemplos.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section section-compact">
+          <div class="container">
+            <div class="section-label reveal">
+              <span id="stats-label">Señales rápidas</span>
+            </div>
+            <div class="stats-grid" id="stats-grid" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="section" id="narrative">
+          <div class="container split-section">
+            <div class="section-heading reveal">
+              <p class="eyebrow" id="narrative-eyebrow">Por qué existe esta web</p>
+              <h2 id="narrative-title">El CV resume. Este portfolio explica.</h2>
+            </div>
+            <div class="section-copy reveal">
+              <p id="narrative-body">
+                Un buen CV lista hitos. Un buen portfolio añade el contexto que permite valorar el nivel real de
+                autonomía, criterio e impacto detrás de esos hitos.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="selected-work">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow" id="projects-eyebrow">Casos seleccionados</p>
+              <h2 id="projects-title">Proyectos que merecen una explicación más allá de una línea en el CV.</h2>
+            </div>
+            <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="section" id="experience">
+          <div class="container split-section">
+            <div class="section-heading reveal">
+              <p class="eyebrow" id="experience-eyebrow">Experiencia</p>
+              <h2 id="experience-title">Una trayectoria contada por responsabilidades, no solo por cargos.</h2>
+            </div>
+            <div class="timeline" id="experience-timeline" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="section" id="approach">
+          <div class="container">
+            <div class="section-heading reveal">
+              <p class="eyebrow" id="approach-eyebrow">Forma de trabajar</p>
+              <h2 id="approach-title">Cómo convierto ambigüedad en decisiones y entregables.</h2>
+            </div>
+            <div class="approach-grid" id="approach-grid" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="container contact-panel reveal">
+            <div class="contact-copy">
+              <p class="eyebrow" id="contact-eyebrow">Contacto</p>
+              <h2 id="contact-title">Si este enfoque encaja con lo que buscas, seguimos la conversación.</h2>
+              <p id="contact-body">
+                Usa este espacio para cerrar con una llamada a la acción clara y enlaces reales a email, LinkedIn,
+                GitHub o tu CV en PDF.
+              </p>
+            </div>
+            <div class="contact-links">
+              <div id="contact-link-list" class="contact-link-list" aria-live="polite"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-bar">
+          <p id="footer-copy">Portfolio listo para personalizar y publicar.</p>
+          <p class="footer-meta">
+            <span id="footer-year"></span>
+            <span aria-hidden="true">·</span>
+            <span id="footer-tag">Diseñado para complementar un CV</span>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
